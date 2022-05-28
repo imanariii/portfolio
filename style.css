@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+}
+A {
+    color: white; /* Цвет ссылок */
+    text-decoration: none;
+   }
+   A:visited {
+    color: #cecece; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+   A:active {
+    color: white; /* Цвет активных ссылок */
+    text-decoration: none;
+   }
+h1 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+}
+
+h2 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    background: rgba(110, 144, 183, 0.5);
+    width: max-content;
+}
+
+h3 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    background: #B8D9FF;
+}
+
+.personal__body {
+    display: flex;
+    gap: 30px;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    margin-top: 210px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.info h2 {
+    margin-bottom: 44px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+.bg-title {
+    background: #B8D9FF;
+    width: 515px;
+    height: 140px;
+    position: absolute;
+    left: 780px;
+    top: 0px;
+}
+
+.bg-title h1 {
+    position: absolute;
+    width: 515px;
+    height: 66px;
+    top: 102px;
+}
+
+.slider__item img {
+    width: 226px;
+    height: 319px;
+}
+
+.slick-slider {
+    min-width: 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider__item {
+    padding: 0px 15px;
+}
+
+.slider__item img {
+    max-width: 100%;
+}
+
+.slider {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.slider-title {
+    margin: 38px 0 36px 0;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -15px 0 0 0;
+    font-size: 0;
+    width: 40px;
+    height: 24px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('images/next.svg') 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('images/prev.svg') 100% no-repeat;
+}
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    right: 150px;
+    top: 120px;
+}
+
+.menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: linear-gradient(270deg, rgba(184, 217, 255, 0.5) 0%, rgba(184, 217, 255, 0) 100%);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.nav__wrapper {
+    background: #6E90B7;
+    position: absolute;
+    width: 543px;
+    height: 1080px;
+    left: 1377px;
+    top: 0px;
+}
+
+nav {
+    position: absolute;
+    width: 282px;
+    height: 230px;
+    left: 1516px;
+    top: 264px;
+}
+.nav-item {
+    display: block;
+    margin-bottom: 30px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+}
+.nav-items a.active,
+.nav-items a:hover {
+    background-color: #6E90B7;
+}
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+a.active {
+    background-color: #000000;
+}
+
+/* Справочные материалы */
+
+.reference__wrapper {
+    padding: 0px 120px;
+}
+.reference-title {
+    background: #B8D9FF;
+    width: 600px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.reference-title h1 {
+    position: relative;
+    top: 30px;
+}
+.reference-content {
+    padding-top: 90px;
+}
