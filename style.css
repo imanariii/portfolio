@@ -8,18 +8,25 @@
     min-height: 0;
     min-width: 0;
 }
+
 A {
-    color: white; /* Цвет ссылок */
+    color: white;
+    /* Цвет ссылок */
     text-decoration: none;
-   }
-   A:visited {
-    color: #cecece; /* Цвет посещенных ссылок */
+}
+
+A:visited {
+    color: #cecece;
+    /* Цвет посещенных ссылок */
     text-decoration: none;
-   }
-   A:active {
-    color: white; /* Цвет активных ссылок */
+}
+
+A:active {
+    color: white;
+    /* Цвет активных ссылок */
     text-decoration: none;
-   }
+}
+
 h1 {
     font-family: 'Forum';
     font-style: normal;
@@ -54,6 +61,12 @@ p {
     font-size: 20px;
     line-height: 27px;
     background: #B8D9FF;
+    width: max-content;
+    height: max-content;
+}
+
+.reference-item p {
+    box-sizing: content-box;
 }
 
 .personal__body {
@@ -160,7 +173,7 @@ p {
 .menu-btn {
     width: 60px;
     height: 60px;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     overflow: hidden;
     right: 150px;
@@ -204,7 +217,7 @@ p {
     position: absolute;
     width: 543px;
     height: 1080px;
-    left: 1377px;
+    right: 0;
     top: 0px;
 }
 
@@ -212,9 +225,10 @@ nav {
     position: absolute;
     width: 282px;
     height: 230px;
-    left: 1516px;
+    left: 1560px;
     top: 264px;
 }
+
 .nav-item {
     display: block;
     margin-bottom: 30px;
@@ -228,10 +242,12 @@ nav {
     letter-spacing: 0.145em;
     text-transform: uppercase;
 }
+
 .nav-items a.active,
 .nav-items a:hover {
     background-color: #6E90B7;
 }
+
 .menu.active {
     transform: translateX(0);
 }
@@ -254,12 +270,15 @@ nav {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
 }
+
 .page {
     display: none;
 }
+
 .page.active {
     display: block;
 }
+
 a.active {
     background-color: #000000;
 }
@@ -269,17 +288,85 @@ a.active {
 .reference__wrapper {
     padding: 0px 120px;
 }
+
 .reference-title {
     background: #B8D9FF;
     width: 600px;
     height: 140px;
     display: flex;
+    margin-bottom: 110px;
     align-items: flex-end;
 }
+
 .reference-title h1 {
     position: relative;
     top: 30px;
 }
-.reference-content {
-    padding-top: 90px;
+
+.items-imgs {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.reference-list {
+    list-style: none;
+    padding: 50px 0 60px 0;
+}
+
+.reference-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.reference-item p {
+    position: relative;
+    right: 40px;
+}
+
+.reference-item img {
+    position: relative;
+    right: 60px;
+}
+
+.items-imgs {
+    padding: 25px 0 25px 0;
+}
+
+.items-imgs span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+
+    color: #6E90B7;
+}
+
+.imgs-item {
+    width: 278px;
+    height: 419px;
+}
+
+#plan1 {
+    background-image: url(/images/plan1.svg);
+}
+
+#plan2 {
+    background-image: url(/images/plan2.svg);
+}
+
+#plan3 {
+    background-image: url(/images/plan3.svg);
+}
+
+#plan4 {
+    background-image: url(/images/plan4.svg);
+}
+
+#plan5 {
+    background-image: url(/images/plan5.svg);
 }
