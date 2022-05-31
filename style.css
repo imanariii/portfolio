@@ -352,23 +352,23 @@ a.active {
 }
 
 #plan1 {
-    background-image: url(/images/plan1.svg);
+    background-image: url(images/plan1.svg);
 }
 
 #plan2 {
-    background-image: url(/images/plan2.svg);
+    background-image: url(images/plan2.svg);
 }
 
 #plan3 {
-    background-image: url(/images/plan3.svg);
+    background-image: url(images/plan3.svg);
 }
 
 #plan4 {
-    background-image: url(/images/plan4.svg);
+    background-image: url(images/plan4.svg);
 }
 
 #plan5 {
-    background-image: url(/images/plan5.svg);
+    background-image: url(images/plan5.svg);
 }
 
 .practice-title {
@@ -416,4 +416,7 @@ button {
     display: flex;
     position: relative;
     left: 88%;
+}
+.slider__wrappper {
+    margin-bottom: 120px;
 }
